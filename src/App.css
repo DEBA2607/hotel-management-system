@@ -1,0 +1,102 @@
+.MuiTextField-root {
+    background: white;
+    border-radius: 4px;
+}
+
+.react-date-picker {
+    height: 40px !important;
+}
+
+.drawer-userbutton>div>div>button>div {
+    width: 6rem !important;
+    height: 6rem !important;
+}
+
+.MuiDrawer-paperAnchorRight {
+    max-width: 22rem;
+    width: 100%;
+}
+
+.cl-signUp-root {
+    width: 80%;
+}
+
+.cl-signUp-start {
+    box-shadow: none !important;
+    width: auto !important;
+}
+
+.cl-card {
+    box-shadow: none;
+    width: auto;
+}
+
+.cl-userButtonPopoverCard {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 24px 48px !important;
+    width: 23.5rem !important;
+}
+
+@media (max-width: 640px) {
+    .cl-signUp-root {
+        width: 100%;
+    }
+}
+
+.cl-signIn-root {
+    width: 80%;
+}
+
+.cl-signIn-start {
+    box-shadow: none !important;
+    width: auto !important;
+}
+
+@media (max-width: 640px) {
+    .cl-signIn-root {
+        width: 100%;
+    }
+}
+
+.custom-loader {
+    width: 40px;
+    height: 30px;
+    --c: no-repeat linear-gradient(rgb(104, 104, 255) 0 0);
+    background:
+        var(--c) 0 100%/8px 30px,
+        var(--c) 50% 100%/8px 20px,
+        var(--c) 100% 100%/8px 10px;
+    position: relative;
+    clip-path: inset(-100% 0);
+}
+
+.custom-loader:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(104, 104, 255);
+    left: -16px;
+    top: 0;
+    animation:
+        l5-1 2s linear infinite,
+        l5-2 0.5s cubic-bezier(0, 200, .8, 200) infinite;
+}
+
+@keyframes l5-1 {
+    0% {
+        left: -16px;
+        transform: translateY(-8px)
+    }
+
+    100% {
+        left: calc(100% + 8px);
+        transform: translateY(22px)
+    }
+}
+
+@keyframes l5-2 {
+    100% {
+        top: -0.1px
+    }
+}
